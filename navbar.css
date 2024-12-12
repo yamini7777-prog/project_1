@@ -1,0 +1,268 @@
+body {
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 15px 30px;
+}
+
+.brand {
+    color: gold; /* Gold color for the brand */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    color: black; /* Default link color */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: gold; /* Gold color on hover or active */
+   
+}
+
+.introduction {
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    color: goldenrod;
+}
+h3{
+    /* padding-left: 20px; */
+    color: goldenrod;
+}
+P{ 
+  text-align: justify;
+    /* padding-left: 20px; */
+}
+.introduction img{
+    width: 1540px;
+    height: 400px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* .image-item {
+    text-align: center; 
+} */
+
+.image-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styles */
+button {
+    background-color: #e0b21b; /* Gold background */
+    color: black; /* Black text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+button:hover {
+    background-color: #e0b21b; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.left img{
+padding: 20px;
+}
+
+/* Existing styles... */
+
+/* Container for left and right sections */
+.container {
+    display: flex; /* Use flexbox for layout */
+    width: 100%; /* Full width */
+}
+
+/* Left column styles */
+.left,
+.right {
+    flex: 1; /* Take equal space */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Additional styling for images in left and right columns */
+.left img,
+.right img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.category-links,
+.useful-links {
+    list-style-type: none; /* Remove default list style */
+    padding: 20; /* Remove padding */
+}
+
+.category-links li,
+.useful-links li {
+    margin: 5px 0; /* Space between links */
+}
+
+.category-links a,
+.useful-links a {
+   
+    color: skyblue; /* Link color */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.category-links a:hover,
+.useful-links a:hover {
+    color: skyblue; /* Change color on hover */
+}
+
+.links-container {
+    display: flex; /* Use flexbox to arrange categories and useful links side by side */
+    justify-content: space-between; /* Space them evenly */
+}
+
+.categories,
+.useful-links {
+    flex: 1; /* Each section takes equal width */
+   
+}
+
+.category-links,
+.useful-links ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 20; /* Remove padding */
+}
+
+.category-links li,
+.useful-links ul li {
+    margin: 5px 0; /* Space between links */
+    padding-top: 7px;
+    padding-bottom:7px;
+}
+
+.category-links a,
+.useful-links ul a {
+   
+    color: skyblue; /* Link color */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.category-links a:hover,
+.useful-links ul a:hover {
+    color: skyblue; /* Change color on hover */
+}
+
+.item {
+    display: flex;
+    margin-bottom: 10px; /* Space between items */
+}
+
+.item img {
+    margin-right: 5px; /* Space between image and text */
+}
+
+h4{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    padding: 20px; /* Space inside the footer */
+    background-color: black; /* Optional background color */
+}
+
+.footer-column {
+    width: 25%; /* Each column takes up 25% of the footer width */
+    padding: 10px; /* Padding inside each column */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: start; /* Center align text */
+}
+.footer-column li{
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+.info-box {
+    /* display:block; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Border around the box */
+    padding: 10px; /* Padding inside the box */
+    margin-top: 10px; /* Space above the box */
+    background-color: lightgrey; /* Background color of the box */
+    border-radius: 5px; /* Rounded corners */
+    /* width: 23%;  */
+    height: 250px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+section{
+    height: 300px;
+    width: 50%;
+}
+
+   hr{
+    width: 460px;
+    margin-top: 30px;
+   }
+
+   /* Footer Styling */
+.footer2 {
+    background-color: #222; /* Dark background for footer */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Text inside footer */
+.footer-text {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+/* Zigzag border on top of footer */
+.footer2::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(135deg, #222 25%, transparent 25%) -10px 10px,
+                linear-gradient(225deg, #222 25%, transparent 25%) -10px 10px,
+                linear-gradient(315deg, #222 25%, transparent 25%),
+                linear-gradient(45deg, #222 25%, transparent 25%);
+    background-size: 20px 20px;
+}
+
+/* Year Styling */
+.year {
+    color: #FFD700; /* Gold color for the year */
+}
